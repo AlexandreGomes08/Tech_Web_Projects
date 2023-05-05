@@ -1,0 +1,230 @@
+/*1)*/
+
+@media screen and (min-width:0px) and (max-width:320px) {
+    .responsive{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:480px) {
+    .responsive{
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:600px) {
+    .responsive{
+        width: 200px;
+        height: 200px;
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .responsive{
+        width: 200px;
+        height: 200px;
+        background-color: lightyellow;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:800px) {
+    .responsive{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1024px) {
+    .responsive{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1280px) {
+    .responsive{
+        width: 200px;
+        height: 200px;
+        background-color: green;
+    }
+}
+
+@media screen and (min-width:1281px) and (max-width:1440px) {
+    .responsive{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+}
+
+
+
+
+
+/*2)*/
+@media (min-width: 700px) and (orientation: landscape) { 
+    .paisagem{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+    }
+
+}
+
+
+
+
+
+
+/*3)*/
+
+
+.dispositivo{
+    height: 100px;
+    width: 100%;
+    display: block;
+}
+
+.verde{
+    background-color: lightgreen;
+}
+
+.azul{
+    background-color: lightblue;
+}
+
+.roxo{
+    background-color: rgb(214, 15, 214);
+}
+
+/*Celular*/
+@media screen and (min-width: 0) and (max-width: 768px) and (orientation: portrait) {
+    .dispositivo div{
+        display: block;
+        height: 200px;
+        width: 100%;
+    }
+    .dispositivo .azul{
+        display: none;
+    } 
+    .dispositivo .roxo{
+        display: none;
+    } 
+    .dispositivo div:nth-of-type(4){
+        display: none;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    .dispositivo div{
+        display: block;
+        height: 100px;
+        width: 100%;
+    }
+    .dispositivo .roxo{
+        display: none;
+    } 
+    .dispositivo div:nth-of-type(4){
+        display: none;
+    } 
+    .dispositivo div:nth-of-type(5){
+        display: none;
+    }
+}
+
+/*TV*/
+@media screen and (min-width: 1280px){
+    .dispositivo div{
+        display: block;
+        height: 50px;
+        width: 100%;
+    }
+}
+
+
+/*4)*/
+h1{
+    text-align: center;
+}
+
+.pais{
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pais button{
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-size: 15px;
+}
+
+.text-section{
+    margin: 10px 50px;
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.img-section{
+    margin: 10px 50px;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) and (orientation: portrait) {
+    .item-section{
+        flex-direction: column;
+    }
+
+    .img-section{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    .item-section{
+        flex-direction: row;
+    }
+
+    .img-section{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .item-section{
+        flex-direction: row;
+    }
+
+    .img-section{
+        display: block;
+        margin: 20px 20px;
+    }
+    .pais button{
+        margin: 5px 10px;
+        width: 200px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .text-section{
+        height: auto;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+    }
+}

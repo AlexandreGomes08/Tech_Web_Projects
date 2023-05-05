@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de informações do cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header{
+            width: 100%;
+            background-color: blueviolet;
+            margin: -12px;
+            padding: 10px;
+            font-family:'Courier New', Courier, monospace;
+            color: white;
+
+        }
+        nav{
+            display: inline-block;
+            width: 100%;
+            background-color: black;
+            margin: -12px;
+            padding: 10px;
+            font-family:'Courier New', Courier, monospace;
+           
+        }
+        form{
+            color:white;
+        }
+        h4{
+            color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario para cadastro de informações de cliente</h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME | </a>
+        <a href="#">CADASTRE-SE |</a>
+        <a href="#">QUEM SOMOS |</a>
+        <a href="#">CONTATO</a>
+    </nav>
+    <main>
+        <h4>Digite as informações para o cadastro:</h4><br> 
+        <form action="" method="post">
+            Data de nascimento:<br>
+            <input type="date" name="data"> <br>
+
+            Email: <br>
+            <input type="text" name="email"> <br>
+
+            Telefone: <br>
+            <input type="text" name="telefone"> <br>
+
+            Número de filmes que você pretende ver semanalmente: <br>
+            <select name="filmes">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select><br><br>
+            Mês de adesão: <br>
+            <input type="text" name="adesao"> <br>
+            Preferência de Gênero de filmes: <br>
+            <input type="range" id="points" name="points" min="0" max="10">Ação<br>
+            <input type="range" id="points" name="points" min="0" max="10">Drama<br>
+            <input type="range" id="points" name="points" min="0" max="10">Romance<br>
+            <input type="range" id="points" name="points" min="0" max="10">Comédia<br>
+            <input type="range" id="points" name="points" min="0" max="10">Suspense<br>
+            <input type="range" id="points" name="points" min="0" max="10">Terror<br>
+            <input type="range" id="points" name="points" min="0" max="10">Ficção<br><br>
+
+            Endereço da página pessoal do cliente: <br>
+            <input type="text" name="end"> <br>
+
+            Data e hora que o cliente prefere utilizar o cupom de desconto da primeira compra: <br>
+            <input type="date" name="date2"> <input type="time" name="hora"><br><br>
+
+            Cor de preferência para visualização da área do cliente: <br>
+            <input type="radio" name="cor" value="e">Escuro<br>
+            <input type="radio" name="cor" value="c">Claro<br>
+
+            <br><input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>

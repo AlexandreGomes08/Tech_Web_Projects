@@ -1,0 +1,36 @@
+a:hover{
+    text-decoration: none;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:blueviolet;
+}
+
+main{
+    background-image: url("imagens/4.jpg");
+    background-color:white ;
+    margin: -12px;
+    padding: 10px;
+    width: 100%;
+    height: 900px;
+    background: rgba(0,0,0,10);
+    
+}
+
+.img{
+    width:250px;
+    height: 300px;
+}
+
+#fig1{
+    display: inline-block;
+}
+
+#fig2{
+    display: inline-block;
+}
+
+#fig3{
+    display: inline-block;
+}
